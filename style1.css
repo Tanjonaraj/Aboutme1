@@ -1,0 +1,89 @@
+body {
+	background: url("f_e.jpg") no-repeat fixed;
+	background-size: cover;
+	display: flex;
+	height: 100vh;
+}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+div.sary{
+	position: absolute;
+	width: 40px;
+	height: 30px;
+	top:3px;
+	right: 250px;
+	background: fixed;
+	
+
+}
+ul li.btn > ul.io{
+	list-style: none;
+	color: whitesmoke;
+	background: #9521ac;
+	margin-left: 300px;
+	padding: 20px 30px;
+	margin: 10px 0;
+
+}
+ul li.btn > ul.io:hover {
+	transform: translateX(50px);
+	transition: 0.6s all;
+}
+ul > li.btn{
+	list-style: none;
+	color: whitesmoke;
+	width: 300px;
+	background: rgb(96, 96, 96);
+	margin: 10px 0;
+	padding: 20px 30px;
+	cursor: pointer;
+	position: relative;
+	z-index: 5;
+}
+
+ul > li.btn:hover{
+	transform: translateX(20px);
+	transition: 0.4s all;
+
+}
+ul li.btn::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 5px;
+	background: #3c0a67;
+	transition: 0.3s all;
+	z-index: -1;
+}
+ul li.btn:hover::before{
+	width: 100%;
+}
+
+ul li.btn:nth-child(1)::before{
+	background: #ff8000 ;
+}
+ul li.btn:nth-child(2)::before{
+	background: #278724 ;
+}
+ul li.btn:nth-child(3)::before{
+	background: #1137b5 ;
+}
+ul li.btn:nth-child(4)::before{
+	background: #860bc4 ;
+}
+ul li.btn:nth-child(5)::before{
+	background:darkmagenta ;
+}
+ul li.btn:nth-child(6)::before{
+	background:orangered ;
+}
+
+
+
+
